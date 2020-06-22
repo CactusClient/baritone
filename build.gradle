@@ -77,7 +77,7 @@ minecraft {
 
 repositories {
     mavenCentral()
-
+    maven { url 'https://jitpack.io'}
     maven {
         name = 'spongepowered-repo'
         url = 'http://repo.spongepowered.org/maven/'
@@ -91,7 +91,7 @@ repositories {
 
 dependencies {
     runtime launchCompile('com.github.ImpactDevelopment:SimpleTweaker:1.2')
-    runtime launchCompile('org.spongepowered:mixin:0.8-SNAPSHOT') {
+    runtime launchCompile('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
         // Mixin includes a lot of dependencies that are too up-to-date
         exclude module: 'launchwrapper'
         exclude module: 'guava'
